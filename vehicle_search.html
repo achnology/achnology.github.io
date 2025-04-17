@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Search</title>
     <link rel="stylesheet" href="styles/styles.css" media="print" onload="this.media='all'">
+    <link rel="icon" href="data:,">
     <noscript><link rel="stylesheet" href="styles/styles.css"></noscript>
 
 </head>
@@ -22,11 +23,17 @@
             </nav>
         </header>
 
-        <aside>
-        
-            <img src="" alt="Sidebar Image">
-
+        <aside class="sidebar">
+            <img 
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
+              alt="Sidebar Image" 
+              width="100" 
+              height="100"
+              style="background-color: #e0e0e0;"
+            >
         </aside>
+          
+          
 
         <main>
             <h1>Vehicle Search</h1>
@@ -41,10 +48,9 @@
             </form>
             
 
+            <div id="message"><p>&nbsp;</p></div>
+            <div id="results"><p>&nbsp;</p></div>
             
-
-            <div id="message"></div>
-            <div id="results"></div>
         </main>
 
         <footer>

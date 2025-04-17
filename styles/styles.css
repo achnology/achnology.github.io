@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    min-height: 100vh;
+    overflow-y: scroll;
 }
+
+
 
 #container {
     display: grid;
@@ -38,10 +42,6 @@ main {
     margin: 10px;
 }
 
-.error-message {
-    color: red;
-    font-weight: bold;
-}
 
 .vehicle-result {
     margin-bottom: 10px;
@@ -59,40 +59,46 @@ footer {
     text-align: center;
 }
 
-/* Navigation Links */
-header nav ul li a {
+/* Navigation styling */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #008080; 
+  }
+  
+  header nav ul li {
+    margin: 0;
+  }
+  
+  header nav ul li a {
     display: block;
-    padding: 10px;
-    background-color: #004aad;  
-    color: #ffffff; 
+    padding: 12px 20px;
+    color: #ffffff;
+    background-color: transparent;
     text-decoration: none;
     font-weight: bold;
-}
-
-header nav ul li a:hover {
-    background-color: #002b6c; 
-}
-
-button {
-    background-color: #007a33; 
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #005d25;
-}
-
-.success-message {
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a:focus {
+    background-color: #006666;
+    color: #ffffff;
+  }
+  .success-message {
     background-color: #d4edda;
     color: #155724;
     border: 1px solid #c3e6cb;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin: 0;  
+    }
+ .error-message {
+    color: red;
+    font-weight: bold;
+    margin: 0;  
 }
   
 
@@ -115,7 +121,9 @@ button:hover {
     aside {
         margin-top: 10px;
     }
+
 }
+
 
 /* Accessibility improvements for forms and inputs */
 form div {
@@ -137,17 +145,19 @@ form input[type="date"] {
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #16b43b;
+    background-color: #1a7f37; /* darker green for contrast */
     color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 16px;
+    font-weight: bold;
+    border-radius: 5px;
     cursor: pointer;
 }
-
+  
 button:hover {
-    background-color: #218838;
+    background-color: #155c2e; /* even darker for hover */
 }
+  
 
 /* Add Vehicle Layout Fixes */
 
@@ -177,6 +187,53 @@ button:hover {
     margin-top: 0;
     font-size: 1.2em;
     margin-bottom: 10px;
-  }
+}
+
+/* Prevent layout shift by reserving space */
+#message,
+#message-owner,
+#message-vehicle,
+#results,
+#owner-results {
+  min-height: 2.5em;
+  display: block;
+  overflow-anchor: none;
+  margin-top: 15px;
+}
+
+/* FINAL FIX FOR SIDEBAR LAYOUT SHIFT */
+.sidebar {
+    grid-area: sidebar;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar img {
+    width: 100px;
+    aspect-ratio: 1 / 1;
+    display: block;
+    object-fit: contain;
+    background-color: #e0e0e0;
+}
+
+/* Lock sidebar height in mobile to avoid CLS */
+@media screen and (max-width: 500px) {
+    .sidebar {
+        height: 120px; /* matches min-height */
+    }
+}
+
+
+
+
+
+
+  
   
 
