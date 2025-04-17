@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (data.length > 0) {
-        messageDiv.innerHTML = '<p role="alert">Search successful</p>';
+        messageDiv.innerHTML = '<p class="success-message" role="alert">Search successful</p>';
         data.forEach(person => {
           const div = document.createElement('div');
           div.innerHTML = `<p>${person.Name} - ${person.LicenseNumber}</p>`;

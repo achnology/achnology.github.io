@@ -86,6 +86,16 @@ button:hover {
     background-color: #005d25;
 }
 
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+  
+
 
 /* Responsive layout adjustments */
 @media screen and (max-width: 500px) {
