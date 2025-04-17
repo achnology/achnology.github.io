@@ -1,0 +1,169 @@
+/* General resets and basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+aside {
+    grid-area: sidebar;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+    grid-area: main;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.vehicle-result {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+}
+  
+
+footer {
+    grid-area: footer;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Navigation styling */
+header nav ul {
+    display: flex;
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 500px) {
+    #container {
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-top: 10px;
+    }
+}
+
+/* Accessibility improvements for forms and inputs */
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #16b43b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Add Vehicle Layout Fixes */
+
+#vehicle-input-form > button,
+#vehicle-input-form > div,
+#new-owner-form > div,
+#new-owner-form > button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Ensure buttons on same row have space */
+#vehicle-input-form button {
+  margin-right: 10px;
+}
+
+/* Add space above the new-owner-form */
+#new-owner-form {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#new-owner-form h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Search</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="people_search.html">People search</a></li>
+                    <li><a href="vehicle_search.html">Vehicle search</a></li>
+                    <li><a href="add_vehicle.html">Add a vehicle</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+            <!-- Include an image for sidebar (as per coursework spec) -->
+            <img src="" alt="Sidebar Image">
+        </aside>
+
+        <main>
+            <h1>People Search</h1>
+
+            <form id="people-search-form">
+                <div>
+                    <label for="name">Driver Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div>
+                    <label for="license">License Number:</label>
+                    <input type="text" id="license" name="license">
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="message"></div>
+            <div id="results"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 COMP1004 Coursework</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="javascript/scripts.js"></script>
+
+</body>
+</html>

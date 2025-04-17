@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Vehicle </title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="people_search.html">People search</a></li>
+                    <li><a href="vehicle_search.html">Vehicle search</a></li>
+                    <li><a href="add_vehicle.html">Add a vehicle</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+            <img src="" alt="Sidebar Image">
+        </aside>
+
+        <main>
+            <h1>Add A Vehicle</h1>
+
+         
+        <form id="vehicle-input-form">
+            <div>
+            <label for="rego">Registration Number:</label>
+            <input type="text" id="rego" name="rego" placeholder="Registration Number">
+            </div>
+
+            <div>
+            <label for="make">Vehicle Make:</label>
+            <input type="text" id="make" name="make" placeholder="Vehicle Make">
+            </div>
+
+            <div>
+            <label for="model">Vehicle Model:</label>
+            <input type="text" id="model" name="model" placeholder="Vehicle Model">
+            </div>
+
+            <div>
+            <label for="colour">Vehicle Colour:</label>
+            <input type="text" id="colour" name="colour" placeholder="Vehicle Colour">
+            </div>
+
+            <div>
+            <label for="owner">Owner Name:</label>
+            <input type="text" id="owner" name="owner" placeholder="Owner Name">
+            </div>
+
+            <button id="check-owner" type="button">Check owner</button>
+
+            <div id="owner-results"></div>
+
+            <button id="new-owner" type="button" style="display: none;">New owner</button>
+
+            
+            <button id="add-vehicle" type="button">Add vehicle</button>
+        </form>
+
+        <form id="new-owner-form" style="display:none;">
+            <h2>New Owner Details</h2>
+            <div>
+                <label for="name">Owner Name:</label>
+                <input type="text" id="name" placeholder="Owner Name">
+            </div>
+            <div>
+                <label for="address">Owner Address:</label>
+                <input type="text" id="address" placeholder="Owner Address">
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" placeholder="Date of Birth">
+            </div>
+            <div>
+                <label for="license">License Number:</label>
+                <input type="text" id="license" placeholder="License Number">
+            </div>
+            <div>
+                <label for="expire">License Expiry Date:</label>
+                <input type="date" id="expire" placeholder="License Expiry Date">
+            </div>
+            <button type="button" id="add-owner">Add owner</button>
+        </form>
+
+        <div class="messages">
+            <div id="message-owner"></div>
+            <div id="message-vehicle"></div>
+        </div>
+            
+        </main>
+
+        <footer>
+            <p>&copy; 2025 COMP1004 Coursework</p>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="javascript/scripts.js"></script>
+    
+
+</body>
+</html>
