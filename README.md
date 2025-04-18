@@ -1,5 +1,4 @@
 # COMP1004 Coursework Website – Pablo Gallegos Vargas
----
 
 ###  Live Link 
 [https://achnology.github.io](https://achnology.github.io)
@@ -12,7 +11,7 @@ This coursework consists of a responsive web application with three main functio
 - Adding vehicles to the database with either existing or new owners
 
 Accessibility, performance, and layout stability were addressed based on Lighthouse audits and Supabase testing.
----
+
 
 ### ✅ Completed Features (Sequentially)
 
@@ -58,9 +57,11 @@ Accessibility, performance, and layout stability were addressed based on Lightho
 - Fully accessible buttons, labels, and input fields
 - Sidebar image using transparent pixel and `aspect-ratio` for layout stability
 
-**Accessibility Score:** 100/100  
-**Responsive Design:** Yes – tested under 500px screen width  
-**CSS File:** `styles.css`
+* Accessibility Score: 100/100  *
+
+* Responsive Design: Yes – tested under 500px screen width *
+
+* CSS File:** `styles.css` *
 ---
 ##  JavaScript & Database 👾
 
@@ -91,7 +92,7 @@ Accessibility, performance, and layout stability were addressed based on Lightho
 ![Vehicle Search Lighthouse](screenshots/lighthouse-vehicle_search.png)  
 ![Add Vehicle Lighthouse](screenshots/lighthouse-add_vehicle.png)  
 ![Index Lighthouse](screenshots/lighthouse-index.png)
----
+
 ##  Supabase Cron Job 👾
 
 To prevent my Supabase database from sleeping (as it auto-pauses after 7 days of inactivity), I set up a **cron job** using [cron-job.org](https://cron-job.org/).
@@ -103,9 +104,9 @@ To prevent my Supabase database from sleeping (as it auto-pauses after 7 days of
   - Scheduling the job to hit `https://achnology.github.io/people_search.html` every 24 hours
   - Confirming the job status in the cron-job dashboard
 
-✅ This ensures consistent uptime and access for marking and testing purposes.
---- 
-## 🧪 Known Playwright Test Issues
+This ensures consistent uptime and access for marking and testing purposes. ✅ 
+
+## 🧪 Known Playwright Test Issue
 
 ### ❌ Test 14: Add a Vehicle (`#personid`)
 
@@ -121,7 +122,8 @@ The Playwright test attempts to fill an input field with `id="personid"`, which 
   - Success/error messaging
   - Owner association
 
-✅ All other Playwright tests passed successfully (13/14).
+All other Playwright tests passed successfully (13/14). ✅
+
+This project meets all coursework requirements and has been fully tested and deployed!
 ---
-✅ This project meets all coursework requirements and has been fully tested and deployed.
 
