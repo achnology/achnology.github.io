@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>People Search</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="scripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - COMP1004 Coursework</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="people_search.html">People search</a></li>
-                    <li><a href="vehicle_search.html">Vehicle search</a></li>
-                    <li><a href="add_vehicle.html">Add a vehicle</a></li>
-                </ul>
-            </nav>
-        </header>
+  <div id="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="people_search.html">People search</a></li>
+          <li><a href="vehicle_search.html">Vehicle search</a></li>
+          <li><a href="add_vehicle.html">Add a vehicle</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <aside>
-            <img src="" alt="Sidebar Image">
-        </aside>
+    <aside class="sidebar">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sidebar Image">
+    </aside>
 
-        <main>
-            <h1>People Search</h1>
+    <main>
+      <h1>Welcome</h1>
+        <p>This is the homepage for the COMP1004 Coursework project.</p>
+        <p>Use the navigation above to access the different tools:</p>
+      <ul>
+        <li><strong>People search:</strong> Look up a person by name or license.</li>
+        <li><strong>Vehicle search:</strong> Find vehicle details using a registration number.</li>
+        <li><strong>Add a vehicle:</strong> Add a new vehicle record to the system.</li>
+      </ul>
+    </main>
 
-            <form id="people-search-form">
-                <label for="name">Driver Name:</label>
-                <input type="text" id="name" name="name">
-
-                <label for="license">License Number:</label>
-                <input type="text" id="license" name="license">
-
-                <button type="submit">Submit</button>
-            </form>
-
-            <div id="message"></div>
-            <div id="results"></div>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 COMP1004 Coursework</p>
-        </footer>
-    </div>
+    <footer>
+      &copy; 2025 COMP1004 Coursework
+    </footer>
+    
+  </div>
 </body>
 </html>
