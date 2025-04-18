@@ -103,15 +103,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       vehicles.forEach(vehicle => {
         const owner = vehicle.people;
-        const vehicleInfo = `
-          <div class="vehicle-result">
-            <p><strong>Vehicle:</strong> ${vehicle.VehicleID} — ${vehicle.Make} ${vehicle.Model} (${vehicle.Colour})</p>
-            <p><strong>Owner:</strong> ${owner ? `${owner.Name} — ${owner.LicenseNumber}` : 'Unknown'}</p>
-          </div>
-        `;
         const div = document.createElement('div');
-        div.innerHTML = vehicleInfo;
+        div.classList.add('vehicle-result');
+        div.innerHTML = `
+          <p><strong>Vehicle:</strong> ${vehicle.VehicleID} — ${vehicle.Make} ${vehicle.Model} (${vehicle.Colour})</p>
+          <p><strong>Owner:</strong> ${owner ? `${owner.Name} — ${owner.LicenseNumber}` : 'Unknown'}</p>
+        `;
         resultsDiv.appendChild(div);
+        
       });
     });
   }
