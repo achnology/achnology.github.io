@@ -3,7 +3,7 @@
 ###  Live Link 
 [https://achnology.github.io](https://achnology.github.io)
 ---
-### Summary 📝
+### Summary 
 This coursework consists of a responsive web application with three main functional HTML pages using Supabase as the backend. The project is made for:
 
 - Searching people by name or license number
@@ -13,7 +13,7 @@ This coursework consists of a responsive web application with three main functio
 Accessibility, performance, and layout stability were addressed based on Lighthouse audits and Supabase testing.
 
 
-### ✅ Completed Features (Sequentially)
+### Completed Features (Sequentially) ✅ 
 
 - Set up Supabase project with `people` and `vehicles` tables.
 - Configured foreign key relationship between vehicles and owners.
@@ -39,7 +39,7 @@ Accessibility, performance, and layout stability were addressed based on Lightho
 
 ## HTML & CSS 👾
 
-### Pages and Features
+### Pages and Features 📄
 
 | Page                | Key Features                                               |
 |---------------------|------------------------------------------------------------|
@@ -78,14 +78,14 @@ Accessibility, performance, and layout stability were addressed based on Lightho
 | Add vehicle      | `owner`, `rego`, `make`, `model`, `colour`, `new-owner-form`, `add-owner`, `check-owner`, `add-vehicle` |
 | People search    | `name`, `license`                              |
 
-## Lighthouse Results 
+## Lighthouse Results ⛯
 
 ✅ **Accessibility:** 100  
 ✅ **Best Practices:** 100  
 ✅ **SEO:** 100  
 ✅ **Performance:** 99–100 on all pages
 
-### Screenshots
+### Screenshots 
 
 ![People Search Lighthouse](screenshots/lighthouse-people-search.png)  
 ![Vehicle Search Lighthouse](screenshots/lighthouse-vehicle_search.png)  
@@ -105,9 +105,9 @@ To prevent my Supabase database from sleeping (as it auto-pauses after 7 days of
 
 This ensures consistent uptime and access for marking and testing purposes. ✅ 
 
-## 🧪 Known Playwright Test Issue
+##  Known Playwright Test Issues
 
-### ❌ Test 14: Add a Vehicle (`#personid`)
+###  Test 14: Add a Vehicle (`#personid`) ❌
 
 The Playwright test attempts to fill an input field with `id="personid"`, which does not exist in my implementation.
 
