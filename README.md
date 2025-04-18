@@ -61,6 +61,11 @@ Accessibility, performance, and layout stability were addressed based on Lightho
 **Responsive Design:** Yes – tested under 500px screen width  
 **CSS File:** `styles.css`
 
+### Sidebar Visual 🎭
+
+A small icon is placed in the sidebar using `<img>` for layout balance and visual enhancement.  
+Image used: comedy/tragedy masks icon (`images/sidebar-icon.png`)
+
 ---
 ##  JavaScript & Database 👾
 
