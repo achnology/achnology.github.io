@@ -97,7 +97,7 @@ Accessibility, performance, and layout stability were addressed based on Lightho
 
 ### Screenshots
 
-![People Search Lighthouse](screenshots/lighthouse-people_search.png)  
+![People Search Lighthouse](screenshots/lighthouse-people-search.png)  
 ![Vehicle Search Lighthouse](screenshots/lighthouse-vehicle_search.png)  
 ![Add Vehicle Lighthouse](screenshots/lighthouse-add_vehicle.png)  
 ![Index Lighthouse](screenshots/lighthouse-index.png)
