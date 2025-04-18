@@ -57,11 +57,10 @@ Accessibility, performance, and layout stability were addressed based on Lightho
 - Fully accessible buttons, labels, and input fields
 - Sidebar image using transparent pixel and `aspect-ratio` for layout stability
 
-* Accessibility Score: 100/100  *
+**Accessibility Score:** 100/100  
+**Responsive Design:** Yes – tested under 500px screen width  
+**CSS File:** `styles.css`
 
-* Responsive Design: Yes – tested under 500px screen width *
-
-* CSS File:** `styles.css` *
 ---
 ##  JavaScript & Database 👾
 
@@ -124,6 +123,6 @@ The Playwright test attempts to fill an input field with `id="personid"`, which 
 
 All other Playwright tests passed successfully (13/14). ✅
 
-This project meets all coursework requirements and has been fully tested and deployed!
----
+**This project meets all coursework requirements and has been fully tested and deployed!**
+
 
