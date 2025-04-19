@@ -210,11 +210,13 @@ button:hover {
 
 .sidebar img {
     width: 100px;
-    aspect-ratio: 1 / 1;
+    height: 100px;
     display: block;
     object-fit: contain;
-  }
+    background-color: #e0e0e0; /* Optional placeholder color */
+}
 
+  
 /* Lock sidebar height in mobile to avoid CLS */
 @media screen and (max-width: 500px) {
     .sidebar {
