@@ -1,0 +1,14 @@
+name: Keep Supabase Awake
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'  # Every 15 minutes
+  workflow_dispatch: # Allow manual runs too
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl Ping Supabase
+        run: |
+          curl -s --head https://ftcyublpgxarucnsmbjw.supabase.co | head -n 1
